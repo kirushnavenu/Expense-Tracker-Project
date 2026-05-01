@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcoral;
+    margin: 30px;
+    padding: 30px;
+}
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: skyblue;
+    border-radius: 15px;
+    box-shadow: 0rex;font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+h1, h2, h3{
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    flex: 1;
+    margin: 5px;
+    padding: 10;
+}
+
+button{
+    margin: 0;
+    padding: 10px;
+    background: rgb(206, 14, 148);
+    border-radius: 10px;
+}
+
+#transtation-list{
+    list-style-type: none;
+    padding: 0;
+    color:rgb(56, 14, 243);
+}
+.incom{
+    color: green;
+    font-weight: bold;
+    
+}
+
+.exspense{
+    color: red;
+    font-weight: bold;
+}
+
+.button-1{
+    background: none;
+    color: green;
+    border: none;
+    cursor: pointer;
+}
+
+.button-2{
+    background: none;
+    color: red;
+    border: none;
+    cursor: pointer;
+}

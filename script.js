@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button class="delete-button" data-index="${originalIndex}">x</button>
             `;
             expenseList.appendChild(li);
-        });
+        }); 
 
 
         document.querySelectorAll(".delete-button").forEach(button => {

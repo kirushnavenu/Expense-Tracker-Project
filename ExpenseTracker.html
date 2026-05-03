@@ -2,27 +2,61 @@
 <html>
 <head>
     <title>Core Js Expense Tracker</title>
-    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
-        <div class="list">
-            <input type="text" id="Description"  required placeholder="Description"><br><br>
-            <input type="number" id="Amount"  required placeholder="Amount"><br><br>
-            <button id="Add Transtaion">Add Transtaion</button><br><br>
+
+        <div id="blance">
+            <h2 class="b">Total Balance: $  <span id="balance">0</span></h2>
         </div>
-        <h2 class="balance">Total Balance:$ <span id="balance">0</span></h2>
-        <h3>Transtaion History</h3>
-        <ul id="transtation-list">
-            <li class="incom">Income<input class="button-1" type="number"required placeholder="$0.00"></li>
-            
-            <li class="exspense">Expense<input class="button-2" type="number"required placeholder="$0.00"></li>
-        </ul>
+
+        <div class="out">
+            <div class="in">
+                <p class="button-1">+ Income</p>
+                <p class="styleIncome" id="totalIncome"></p>
+            </div>
+            <div class="exs">   
+                <p class="button-2">- Expense</p>
+                <p class="styleIncome" id="totalIncome"></p>
+            </div>
+        </div>
+
+        <div class="des">
+            <div>
+                <input type="text" id="description" placeholder="Description" required>
+            </div>
+            <div>
+                <input type="number" id="amount" placeholder="Amount [+Income, -Expense]" required>
+            </div>
+            <div>
+                <button id="addTransactions">Add Transaction</button>
+            </div>
+        </div>
     </div>
+    
+   <table>
+  <tr>
+    <th colspan="2"><h1>Transaction History</h1></th>
+  </tr>
+  <tr>
+    <th><h2>Income History</h2></th>
+    <th><h2>Expense History</h2></th>
+  </tr>
+  <tr>
+    <td><ul id="incomeList"></ul></td>  
+    <td><ul id="expenseList"></ul></td>
+  </tr>
+</table>
+
+
+    <div>
+        <button onclick="de">Delete</button>
+    </div>
+   
+   
+    
     <script src="script.js"></script>
-
-
-
 </body>
 </html>

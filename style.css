@@ -1,65 +1,117 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightcoral;
+    background-color: rgb(222, 228, 171);
     margin: 30px;
     padding: 30px;
 }
-.container{
-    max-width: 600px;
+
+.container {
+    max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    background: skyblue;
+    background: rgb(11, 194, 179);
     border-radius: 15px;
-    box-shadow: 0rex;font-weight: bold;
-    border-bottom: 1px solid #ccc;
-}
-h1, h2, h3{
-    text-align: center;
+
 }
 
-.list{
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list {
     display: flex;
     justify-content: space-between;
 }
-input{
-    flex: 1;
-    margin: 5px;
-    padding: 10;
+
+input {
+    flex: content;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(216, 166, 214);
+    width: 90%;
 }
 
-button{
-    margin: 0;
+button {
+    margin: 10px;
     padding: 10px;
     background: rgb(206, 14, 148);
     border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#transtation-list{
+.styleIncome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#transtation-list {
     list-style-type: none;
     padding: 0;
-    color:rgb(56, 14, 243);
 }
-.incom{
+
+.incom {
     color: green;
     font-weight: bold;
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.exspense{
+.expense {
     color: red;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.button-1{
-    background: none;
+.button-1 {
     color: green;
-    border: none;
-    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.button-2{
-    background: none;
+.button-2 {
     color: red;
-    border: none;
-    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.des {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid palevioletred;
+}
+
+.out {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+}
+
+.in {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+.exs {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.bls {
+    margin: 20 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid purple;
 }

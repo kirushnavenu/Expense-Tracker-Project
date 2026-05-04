@@ -3,27 +3,26 @@ body {
     background-color: rgb(222, 228, 171);
     margin: 30px;
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .container {
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 10px auto;
     padding: 20px;
     background: rgb(11, 194, 179);
     border-radius: 15px;
+    width: 400px;
 
 }
 
 h1,
-h2,
-h3 {
+h2 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.list {
-    display: flex;
-    justify-content: space-between;
 }
 
 input {
@@ -45,28 +44,14 @@ button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.styleIncome{
+.styleIncome {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
-#transtation-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.incom {
-    color: green;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.expense {
-    color: red;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
 
 .button-1 {
     color: green;
@@ -94,7 +79,7 @@ button {
     border: 2px solid blueviolet;
     border-radius: 8px;
 }
- 
+
 .in {
     margin: 5px;
     padding: 5px;
@@ -109,9 +94,32 @@ button {
     border: 2px solid red;
 }
 
-.bls {
-    margin: 20 auto;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid purple;
+
+.table-box {
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 400px;
+    width: 400px;
+
+}
+
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+    background: lightpink;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-box th,
+.table-box td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-box th {
+    background: purple;
+    color: white;
 }

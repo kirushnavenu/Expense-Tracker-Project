@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const balanceDisplay = document.getElementById("balance");
     const descriptionInput = document.getElementById("description");
-    const amountInput = document.getElementById("amount"); 
+    const amountInput = document.getElementById("amount");
 
     let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button class="delete-button" data-index="${originalIndex}">x</button>
             `;
             expenseList.appendChild(li);
-        }); 
+        });
 
 
         document.querySelectorAll(".delete-button").forEach(button => {

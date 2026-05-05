@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-    max-width: 800px;
     margin: 10px auto;
     padding: 20px;
     background: rgb(11, 194, 179);
@@ -85,6 +84,7 @@ button {
     padding: 5px;
     border-radius: 5px;
     border: 2px solid green;
+    color: green;
 }
 
 .exs {
@@ -92,6 +92,7 @@ button {
     padding: 5px;
     border-radius: 5px;
     border: 2px solid red;
+    color: red;
 }
 
 
